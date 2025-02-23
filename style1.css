@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  /* background-color: rgb(255, 255, 255); */
+  /* background-color: rgb(81, 182, 222); */
+  /* background-color: black; */
+  /* color: white; */
+  /* box-shadow: 2px 2px 10px black; */
+
+  background-color: #fff;
+}
+.navbar-1 {
+  width: 100%;
+  padding: 0 20% 0 10%;
+  /* border: 2px solid red; */
+  display: flex;
+  /* gap: 30%; */
+  justify-content: space-evenly;
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url(logo-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  /* background-color: #b5eaff; */
+}
+
+.navbar-1 ul {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  gap: 5%;
+  /* gap: 60%; */
+  /* justify-content: s; */
+}
+.nav-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.nav-link ul li a:hover {
+  color: rgb(92, 81, 81);
+  transform: scale(1.5);
+}
+#events {
+  animation: blinking 0.5s linear infinite;
+}
+@keyframes blinking {
+  to {
+    color: blue;
+  }
+  from {
+    color: black;
+  }
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 100px;
+}
+
+.container h1 {
+  width: 100%;
+  padding: 2vw 0;
+  text-align: center;
+  font-size: 3.4vw;
+  outline: none;
+  border-bottom: 2px solid white;
+  background-color: #0c1a3f;
+  color: white;
+}
+.first-container {
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  gap: 20px;
+  margin: 1.5vw 0;
+}
+.president1 {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 5rem; */
+}
+.president1 .image {
+  width: 400px;
+  height: 400px;
+  /* display: flex; */
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 30px; */
+  overflow: hidden;
+}
+.president1 img {
+  width: 100%;
+  height: 400px;
+}
+.president2 {
+  width: 50%;
+  margin-top: 50px;
+}
+.president2 h2 {
+  padding: 1vw 2vw;
+  font-size: 2.8vw;
+  color: black;
+}
+
+.president2 p {
+  font-size: 1.1vw;
+  text-align: justify;
+  padding: 0 0 0 2vw;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 8vw;
+  }
+
+  .first-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .president1 {
+    width: 100%;
+  }
+  .president2 {
+    width: 100%;
+    padding: 0 5vw;
+  }
+  .president2 h2 {
+    font-size: 4vw;
+  }
+  .president2 p {
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    text-align: justify;
+  }
+}
+/* footer section */
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #0c1a3f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  /* margin-top: 100px; */
+  display: block;
+}
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.footerSection {
+  margin: 10px;
+  width: 20%;
+  flex-wrap: wrap;
+}
+.pastEvent {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+}
+/* .footerSection p{} */
+
+.footerSection h3 {
+  margin-bottom: 10px;
+}
+.footerSection a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footerBottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.footerSection i {
+  line-height: 40px;
+  font-size: 2rem;
+}
+#wordVc {
+  font-size: 2rem;
+}
+#wordVc1 {
+  font-size: 2rem;
+}
